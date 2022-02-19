@@ -1,0 +1,9 @@
+.card-holder {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 50%;
+  width: 80%;
+  margin-left: 15px;
+}

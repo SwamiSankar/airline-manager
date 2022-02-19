@@ -1,0 +1,27 @@
+.passenger-list-table {
+  border: 2px black solid;
+  display: table;
+  position: relative;
+  top: 46%;
+  left: 37%;
+  width: 50%;
+  height: 350px;
+  padding-left: 30px;
+  padding-top: 5px;
+
+  h3 {
+    margin-top: 5px;
+  }
+
+  table {
+    position: inherit;
+    table-layout: inherit;
+    width: 100%;
+    height: 80%;
+    margin-top: 30px;
+
+    thead {
+      text-align: left;
+    }
+  }
+}

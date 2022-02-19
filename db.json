@@ -1,0 +1,334 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "@Password123"
+    }
+  ],
+  "available_slots": [
+    "1300",
+    "1800",
+    "2100"
+  ],
+  "display_slots": {
+    "id": 1,
+    "output_slots": [
+      "1300",
+      "1800",
+      "2100"
+    ]
+  },
+  "passenger_list": [
+    {
+      "id": 1,
+      "name": "Franklin Gutierrez",
+      "age": 58,
+      "slot": "1800",
+      "seat": "A3",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 2,
+      "name": "Ralph Obrien",
+      "age": 30,
+      "slot": "2100",
+      "seat": "G1",
+      "preference": "non-veg",
+      "ancillary": true
+    },
+    {
+      "id": 3,
+      "name": "Clayton Glover",
+      "age": 42,
+      "slot": "1300",
+      "seat": "E4",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 4,
+      "name": "Dorothy McGuire",
+      "age": 34,
+      "slot": "1800",
+      "seat": "C1",
+      "preference": "veg",
+      "ancillary": true
+    },
+    {
+      "id": 5,
+      "name": "Jacob Howard",
+      "age": 60,
+      "slot": "1300",
+      "seat": "F1",
+      "preference": "veg",
+      "ancillary": false
+    },
+    {
+      "id": 6,
+      "name": "Bradley Ramsey",
+      "age": 64,
+      "slot": "1300",
+      "seat": "F3",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 7,
+      "name": "Myrtie Webb",
+      "age": 61,
+      "slot": "2100",
+      "seat": "C1",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 8,
+      "name": "Irene Ramos",
+      "age": 57,
+      "slot": "1300",
+      "seat": "A1",
+      "preference": "non-veg",
+      "ancillary": true
+    },
+    {
+      "id": 9,
+      "name": "Minerva Clayton",
+      "age": 24,
+      "slot": "2100",
+      "seat": "D5",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 10,
+      "name": "Elizabeth Green",
+      "age": 48,
+      "slot": "1300",
+      "seat": "F5",
+      "preference": "veg",
+      "ancillary": true
+    },
+    {
+      "id": 11,
+      "name": "Martha Wells",
+      "age": 21,
+      "slot": "2100",
+      "seat": "G3",
+      "preference": "no preference",
+      "ancillary": true
+    },
+    {
+      "id": 12,
+      "name": "Don Owen",
+      "age": 26,
+      "slot": "1800",
+      "seat": "F5",
+      "preference": "non-veg",
+      "ancillary": true
+    },
+    {
+      "id": 13,
+      "name": "Jeff Stephens",
+      "age": 44,
+      "slot": "2100",
+      "seat": "G6",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 14,
+      "name": "Leon McCormick",
+      "age": 58,
+      "slot": "2100",
+      "seat": "G4",
+      "preference": "no preference",
+      "ancillary": false
+    },
+    {
+      "id": 15,
+      "name": "Sally Fletcher",
+      "age": 18,
+      "slot": "1300",
+      "seat": "H3",
+      "preference": "veg",
+      "ancillary": false
+    },
+    {
+      "id": 16,
+      "name": "Winnie Ross",
+      "age": 27,
+      "slot": "2100",
+      "seat": "D1",
+      "preference": "no preference",
+      "ancillary": true
+    },
+    {
+      "id": 17,
+      "name": "Luella Ingram",
+      "age": 63,
+      "slot": "1300",
+      "seat": "H5",
+      "preference": "non-veg",
+      "ancillary": true
+    },
+    {
+      "id": 18,
+      "name": "Jerry Gross",
+      "age": 41,
+      "slot": "2100",
+      "seat": "G3",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 19,
+      "name": "Lester Bryan",
+      "age": 65,
+      "slot": "1300",
+      "seat": "C2",
+      "preference": "non-veg",
+      "ancillary": true
+    },
+    {
+      "id": 20,
+      "name": "Wayne Schneider",
+      "age": 46,
+      "slot": "1800",
+      "seat": "A1",
+      "preference": "veg",
+      "ancillary": true
+    },
+    {
+      "id": 21,
+      "name": "Isabelle Lopez",
+      "age": 59,
+      "slot": "2100",
+      "seat": "H5",
+      "preference": "no preference",
+      "ancillary": false
+    },
+    {
+      "id": 22,
+      "name": "Amanda Warner",
+      "age": 61,
+      "slot": "1300",
+      "seat": "C1",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 23,
+      "name": "Erik Burns",
+      "age": 45,
+      "slot": "2100",
+      "seat": "A2",
+      "preference": "veg",
+      "ancillary": true
+    },
+    {
+      "id": 24,
+      "name": "Alexander Hampton",
+      "age": 41,
+      "slot": "2100",
+      "seat": "E4",
+      "preference": "veg",
+      "ancillary": true
+    },
+    {
+      "id": 25,
+      "name": "Pearl Moran",
+      "age": 54,
+      "slot": "2100",
+      "seat": "C3",
+      "preference": "veg",
+      "ancillary": false
+    },
+    {
+      "id": 26,
+      "name": "Charlotte Holland",
+      "age": 54,
+      "slot": "1300",
+      "seat": "E1",
+      "preference": "non-veg",
+      "ancillary": true
+    },
+    {
+      "id": 27,
+      "name": "Madge Crawford",
+      "age": 58,
+      "slot": "1800",
+      "seat": "C5",
+      "preference": "veg",
+      "ancillary": false
+    },
+    {
+      "id": 28,
+      "name": "Jeremiah Gill",
+      "age": 20,
+      "slot": "1800",
+      "seat": "G2",
+      "preference": "no preference",
+      "ancillary": false
+    },
+    {
+      "id": 29,
+      "name": "Herbert Drake",
+      "age": 42,
+      "slot": "1800",
+      "seat": "A6",
+      "preference": "non-veg",
+      "ancillary": false
+    },
+    {
+      "id": 30,
+      "name": "Katherine Young",
+      "age": 48,
+      "slot": "2100",
+      "seat": "A6",
+      "preference": "veg",
+      "ancillary": true
+    },
+    {
+      "name": "Viktor",
+      "age": 60,
+      "slot": "1800",
+      "seat": "C3",
+      "preference": "non-veg",
+      "ancillary": true,
+      "id": 31
+    },
+    {
+      "name": "Paul Micheal",
+      "age": "5",
+      "slot": "1800",
+      "seat": "B4",
+      "preference": "no preference",
+      "ancillary": false,
+      "id": 32
+    }
+  ],
+  "flight_details": [
+    {
+      "id": 1,
+      "source": "Chennai",
+      "destination": "Delhi",
+      "sourcetime": "1300",
+      "destinationtime": "1600"
+    },
+    {
+      "id": 2,
+      "source": "Chennai",
+      "destination": "Mumbai",
+      "sourcetime": "1800",
+      "destinationtime": "2000"
+    },
+    {
+      "id": 3,
+      "source": "Chennai",
+      "destination": "Kolkata",
+      "sourcetime": "2100",
+      "destinationtime": "2300"
+    }
+  ]
+}

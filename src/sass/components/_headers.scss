@@ -1,0 +1,32 @@
+.website-title {
+  position: relative;
+  text-align: center;
+
+  &-img {
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: -1;
+  }
+
+  &-main {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    font-size: 30px;
+  }
+
+  &-caption {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    margin-bottom: 3px;
+  }
+
+  &-main,
+  &-caption {
+    color: #eba284;
+    text-shadow: 2px 2px 4px #000000;
+  }
+}

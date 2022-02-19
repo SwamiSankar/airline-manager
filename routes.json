@@ -1,0 +1,5 @@
+{
+    "/passenger_list/:id/:preference" : "/passenger_list/:id/?preference=:preference",
+    "/passenger_list/:id/:ancillary" : "/passenger_list/:id/?ancillary=:ancillary",
+    "/passenger_list/:id" : "/passenger_list/:id"
+}

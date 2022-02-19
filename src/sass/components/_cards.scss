@@ -1,0 +1,53 @@
+.homepage-card {
+  display: inherit;
+  width: 20%;
+  background: blanchedalmond;
+  border: 2px black solid;
+  position: absolute;
+  height: 15rem;
+  box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-title {
+  margin: 2px;
+  padding-top: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.card-content {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.flight {
+  &-details-display {
+    display: grid;
+    position: relative;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    background-color: rgb(153, 153, 255);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.passenger-form-card {
+  position: relative;
+  top: 80%;
+}
+
+.passenger-form-error {
+  color: #ff9494;
+}
+
+// .passenger-age {
+//   position: relative;
+//   input {
+//     position: absolute;
+//     margin-left: 20px;
+//   }
+// }

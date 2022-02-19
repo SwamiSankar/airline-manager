@@ -1,0 +1,41 @@
+footer {
+  background-color: rgb(7, 7, 7);
+  color: #faebd7;
+  height: 180px;
+  width: 100%;
+}
+
+.footer-links {
+  &-container {
+    display: block;
+    position: relative;
+    margin-block: -80px;
+  }
+  text-decoration: none;
+  color: #faebd7;
+}
+
+.footer-links-list {
+  position: absolute;
+  display: inherit;
+  list-style-type: none;
+  right: 10%;
+}
+
+.footer {
+  &-about {
+    width: 25%;
+
+    p {
+      padding: 7.5px;
+      column-count: 1;
+      column-gap: 50px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+}
+
+.footer-link-wrapper {
+  padding-bottom: 10px;
+}
