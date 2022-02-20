@@ -4,7 +4,7 @@ import { Button } from "semantic-ui-react";
 import { axiosRequest } from "../../apis/apis";
 import * as Yup from "yup";
 
-const PassengerForm = ({ slot, seat, closeModal }) => {
+const PassengerForm = ({ slot, seat, closeModal, checkinEnabled }) => {
   const initialValues = {
     name: "",
     age: "",
@@ -27,12 +27,10 @@ const PassengerForm = ({ slot, seat, closeModal }) => {
         console.log(response);
       })
       .catch((error) => console.log(error));
+    closeModal();
+    checkinEnabled(seat);
   };
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    closeModal();
-  };
   return (
     <Formik
       initialValues={initialValues}

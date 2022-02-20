@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+
 import { Button, Modal } from "semantic-ui-react";
-import { axiosRequest } from "../../apis/apis";
-import * as Yup from "yup";
+
 import PassengerForm from "../utils/PassengerForm";
 
-const PassengerFormCard = ({ slot, seat }) => {
+const PassengerFormCard = ({ slot, seat, checkedinEnabled }) => {
   const [open, setOpen] = useState(false);
 
   const closeModal = () => {
@@ -32,7 +31,12 @@ const PassengerFormCard = ({ slot, seat }) => {
     >
       <Modal.Header>Enter Passenger Details</Modal.Header>
       <Modal.Content>
-        <PassengerForm slot={slot} seat={seat} closeModal={closeModal} />
+        <PassengerForm
+          slot={slot}
+          seat={seat}
+          closeModal={closeModal}
+          checkinEnabled={checkedinEnabled}
+        />
       </Modal.Content>
     </Modal>
   );

@@ -10,8 +10,9 @@ import CheckinSeatRow from "./CheckinSeatRow";
 const CheckinSeatLayout = ({ seatList, slot }) => {
   const [selected, setselected] = useState(false);
   const [seatValue, setSeatValue] = useState("");
+  const [formChecked, setformChecked] = useState("");
 
-  useEffect(() => {}, [selected]);
+  useEffect(() => {}, [selected, formChecked]);
 
   const isSelected = () => {
     setselected(!selected);
@@ -19,6 +20,10 @@ const CheckinSeatLayout = ({ seatList, slot }) => {
 
   const assignDetails = (seat) => {
     setSeatValue(seat);
+  };
+
+  const checkedinEnabled = (seat) => {
+    setformChecked(seat);
   };
 
   let seats = generateSeatNumber();
@@ -41,6 +46,7 @@ const CheckinSeatLayout = ({ seatList, slot }) => {
                       seatList={seatList}
                       isSelected={isSelected}
                       assignDetails={assignDetails}
+                      formChecked={formChecked}
                     />
                   ) : null;
                 })}
@@ -49,7 +55,13 @@ const CheckinSeatLayout = ({ seatList, slot }) => {
           </>
         );
       })}
-      {selected ? <PassengerFormCard slot={slot} seat={seatValue} /> : null}
+      {selected ? (
+        <PassengerFormCard
+          slot={slot}
+          seat={seatValue}
+          checkedinEnabled={checkedinEnabled}
+        />
+      ) : null}
     </ol>
 
     // <ol className="seat-cabin">
