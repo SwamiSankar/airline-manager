@@ -4,7 +4,6 @@ import { generateSeatNumber } from "../../utils/generateSeatNumber";
 import InflightSeatRow from "./InflightSeatRow";
 
 const InflightSeatLayout = ({ paxList, layout }) => {
-  console.log(paxList);
   let seats = generateSeatNumber();
 
   let seats_set = generateSeatArray(seats);

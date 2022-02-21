@@ -82,7 +82,7 @@ ol {
       text-indent: -9999px;
       overflow: hidden;
       &:after {
-        content: "X";
+        content: "C";
 
         text-indent: 0;
         position: absolute;
@@ -91,7 +91,6 @@ ol {
         transform: translate(-50%, 0%);
       }
       &:hover {
-        cursor: not-allowed;
         box-shadow: none;
       }
     }

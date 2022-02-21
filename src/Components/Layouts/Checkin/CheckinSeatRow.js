@@ -7,6 +7,7 @@ const CheckinSeatRow = ({
   isSelected,
   assignDetails,
   formChecked,
+  slot,
 }) => {
   console.log(formChecked);
   return (
@@ -17,6 +18,7 @@ const CheckinSeatRow = ({
             seat={seat}
             classValue="seat-checkbox-existing"
             isCheckedIn={true}
+            slot={slot}
           />
         ) : (
           <CheckinSeatElement

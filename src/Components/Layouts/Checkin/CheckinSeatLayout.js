@@ -47,6 +47,7 @@ const CheckinSeatLayout = ({ seatList, slot }) => {
                       isSelected={isSelected}
                       assignDetails={assignDetails}
                       formChecked={formChecked}
+                      slot={slot}
                     />
                   ) : null;
                 })}
