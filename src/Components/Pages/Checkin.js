@@ -4,7 +4,7 @@ import { axiosRequest } from "../../apis/apis";
 import SeatMapCard from "../Cards/SeatMapCard";
 import AirlineSearch from "../utils/AirlineSearch";
 import FlightDetails from "../utils/FlightDetails";
-import PassengerList from "../utils/PassengerList";
+import PassengerList from "../Lists/PassengerList";
 import SearchButton from "../utils/SearchButton";
 
 const Checkin = () => {

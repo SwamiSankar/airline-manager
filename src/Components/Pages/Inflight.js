@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../App";
-import LayoutToggle from "../utils/LayoutToggle";
+import LayoutToggle from "../Toggles/LayoutToggle";
 import SeatMapCard from "../Cards/SeatMapCard";
 
 const Inflight = () => {

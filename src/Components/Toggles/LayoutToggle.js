@@ -17,6 +17,7 @@ const LayoutToggle = ({ setLayoutValue }) => {
     <Dropdown
       placeholder="Select a layout"
       selection
+      clearable
       options={toggle}
       onChange={handleChange}
     />

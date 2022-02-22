@@ -220,6 +220,11 @@ footer {
   left: 65%;
 }
 
+.dashboard-container {
+  height: 600px;
+  display: block;
+}
+
 .search-button {
   margin: 8px;
   padding: 7px;
@@ -598,15 +603,15 @@ ol {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.inflight-container span.toggle-span {
+span.toggle-span {
   position: relative;
   left: 42%;
   top: 135px;
 }
 
-.inflight-container span.toggle-span h3 {
+span.toggle-span h3 {
   position: relative;
-  margin-left: 50px;
+  margin-left: 38px;
   padding-bottom: 8px;
 }
 /*# sourceMappingURL=main.css.map */

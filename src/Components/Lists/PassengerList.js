@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { axiosRequest } from "../../apis/apis";
 
+let checkmark = "\u2713";
+let crossmark = "\u2718";
 const PassengerList = ({ flight }) => {
   const [data, setdata] = useState([]);
 
@@ -41,6 +43,8 @@ const PassengerList = ({ flight }) => {
             <th>Age</th>
             <th>Departure Time</th>
             <th>Seat</th>
+            <th>Food Preference</th>
+            <th>Ancillary Service</th>
           </tr>
         </thead>
         <tbody>
@@ -50,6 +54,8 @@ const PassengerList = ({ flight }) => {
               <td>{item.age}</td>
               <td>{item.slot}</td>
               <td>{item.seat}</td>
+              <td>{item.preference}</td>
+              <td>{item.ancillary ? "\u2713" : "\u2718"}</td>
             </tr>
           ))}
         </tbody>

@@ -88,7 +88,7 @@
       "age": 57,
       "slot": "1300",
       "seat": "A1",
-      "preference": "non-veg",
+      "preference": "no preference",
       "ancillary": true
     },
     {
@@ -315,6 +315,15 @@
       "preference": "veg",
       "ancillary": false,
       "id": 33
+    },
+    {
+      "name": "Krishna Bob",
+      "age": "14",
+      "slot": "1800",
+      "seat": "B1",
+      "preference": "non-veg",
+      "ancillary": true,
+      "id": 34
     }
   ],
   "flight_details": [
