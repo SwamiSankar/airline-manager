@@ -19,7 +19,7 @@ let result_json = {
   id: 1,
 };
 
-let url = "http://localhost:3000/available_slots";
+let url = "http://localhost:3000/flight_details";
 
 // function fetch_slots() {
 //   return fetch(url)
@@ -45,9 +45,18 @@ const fetch_slots = async () => {
   return data;
 };
 
-let available_slots = await fetch_slots();
+let available_flights = await fetch_slots();
+
+console.log(available_flights);
+
+let available_slots = [];
+
+available_flights.forEach((flight) => {
+  available_slots.push(flight.sourcetime);
+});
 
 console.log(available_slots);
+
 //console.log(Array.isArray(available_slots)); True
 
 let final_slots = existing_slots.filter((slot) =>

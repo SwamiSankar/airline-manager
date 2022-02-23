@@ -15,10 +15,12 @@ const PassengerForm = ({ slot, seat, closeModal, checkinEnabled }) => {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Name is Required"),
+    name: Yup.string()
+      .required("Name is Required")
+      .matches(/^[a-zA-Z][a-zA-Z ]*$/),
     age: Yup.string()
       .required("Age is Required")
-      .matches(/^[0-9]+$/),
+      .matches(/^[0-9]{2}$/),
   });
   const onSubmit = (values) => {
     axiosRequest

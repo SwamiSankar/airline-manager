@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Button, Modal } from "semantic-ui-react";
 
-import PassengerForm from "../utils/PassengerForm";
+import PassengerForm from "../Forms/PassengerForm";
 
 const PassengerFormCard = ({ slot, seat, checkedinEnabled }) => {
   const [open, setOpen] = useState(false);

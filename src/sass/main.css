@@ -264,6 +264,11 @@ footer {
   text-align: left;
 }
 
+.flight-dashboard-table {
+  position: relative;
+  margin-top: 15rem;
+}
+
 .checkin-seat-layout {
   margin: 35rem auto;
   max-width: 300px;

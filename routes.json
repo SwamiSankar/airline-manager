@@ -1,5 +1,6 @@
 {
     "/passenger_list/:id/:preference" : "/passenger_list/:id/?preference=:preference",
     "/passenger_list/:seat" : "/passenger_list/?seat=:seat",
-    "/passenger_list_update/:id" : "/passenger_list/:id"
+    "/passenger_list_update/:id" : "/passenger_list/:id",
+    "/flight_details_update/:id" : "/flight_details/:id"
 }

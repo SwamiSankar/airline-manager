@@ -15,6 +15,10 @@ const initialState = {
     localStorage.getItem("flight") === null
       ? ""
       : localStorage.getItem("flight"),
+  slot: {
+    oldSlot: "",
+    newSlot: "",
+  },
 };
 
 const reducer = (state, action) => {
@@ -22,6 +26,11 @@ const reducer = (state, action) => {
     case "UPDATE_FLIGHT":
       return {
         flight: action.data,
+      };
+
+    case "UPDATE_SLOT":
+      return {
+        slot: action.data,
       };
     default:
       return initialState;
