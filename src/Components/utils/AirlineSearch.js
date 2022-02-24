@@ -1,26 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { axiosRequest } from "../../apis/apis";
 
 const AirlineSearch = ({ slots, setFlightValue }) => {
-  //   const [value, setvalue] = useState('');
-
-  const flight_select = (value) => {
-    switch (value) {
-      case "1300":
-        return "Morning Flight to Delhi";
-
-      case "1800":
-        return "Evening Flight to Mumbai";
-
-      case "2100":
-        return "Night Flight to Kolkata";
-
-      default:
-    }
-  };
+  const [value, setvalue] = useState([]);
 
   const handleSelect = () => {
     const element = document.querySelector(".flight-searchlist");
     setFlightValue(element.value);
+  };
+
+  useEffect(() => {
+    axiosRequest
+      .get("/flight_details")
+      .then((response) => {
+        setvalue(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  const setMessage = (slot) => {
+    let message = "";
+    value.forEach((element) => {
+      if (element.sourcetime === slot) {
+        message = `Flight from ${element.source} to ${element.destination}`;
+        console.log(message);
+      }
+    });
+    return message;
   };
 
   //console.log(Array.isArray(slots)); True
@@ -37,7 +45,7 @@ const AirlineSearch = ({ slots, setFlightValue }) => {
         </option>
         {slots?.map((slot, index) => (
           <option key={index} value={slot}>
-            {flight_select?.(slot)}
+            {setMessage?.(slot)}
           </option>
         ))}
       </select>
