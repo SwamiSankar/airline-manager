@@ -3,11 +3,15 @@ import React, { useContext, useEffect, useState } from "react";
 import { Icon, Table, Button, Modal } from "semantic-ui-react";
 import { axiosRequest } from "../../apis/apis";
 import { AppContext } from "../../App";
+import CreateFlightModal from "../Modals/CreateFlightModal";
+import DeleteModal from "../Modals/DeleteModal";
 import FlightEditModal from "../Modals/FlightEditModal";
 import { postPassenger } from "../utils/postPassenger";
 
 const DashboardFlightList = () => {
   const [flightData, setflightData] = useState([]);
+  const [newFlight, setnewFlight] = useState();
+  const [deleteFlight, setdeleteFlight] = useState(null);
   const { state } = useContext(AppContext);
   let newSlot = state.slot.newSlot;
   let oldSlot = state.slot.oldSlot;
@@ -18,6 +22,22 @@ const DashboardFlightList = () => {
       setflightData(result.data);
     });
   }, []);
+
+  useEffect(() => {
+    if (newFlight) {
+      axiosRequest.get("/flight_details").then((result) => {
+        setflightData(result.data);
+      });
+    }
+  }, [newFlight]);
+
+  useEffect(() => {
+    if (deleteFlight) {
+      axiosRequest.get("/flight_details").then((result) => {
+        setflightData(result.data);
+      });
+    }
+  }, [deleteFlight]);
 
   const changeSlotValue = () => {
     axiosRequest
@@ -35,9 +55,21 @@ const DashboardFlightList = () => {
       .catch((error) => console.log(error));
   };
 
+  const flightCreated = (value) => {
+    console.log(value);
+    setnewFlight(value);
+  };
+
+  const flightDeleted = (value) => {
+    setdeleteFlight(value);
+  };
+
   useEffect(() => {
     if (newSlot) {
       changeSlotValue();
+      axiosRequest.get("/flight_details").then((result) => {
+        setflightData(result.data);
+      });
     }
   }, [newSlot]);
 
@@ -73,14 +105,20 @@ const DashboardFlightList = () => {
                 />
               </Table.Cell>
               <Table.Cell selectable negative>
-                <Button color="red">
-                  <Icon name="trash" />
-                  Delete
-                </Button>
+                <DeleteModal
+                  id={item.id}
+                  slot={item.sourcetime}
+                  flightDeleted={flightDeleted}
+                />
               </Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>
+        <Table.Footer fullWidth>
+          <Table.HeaderCell colSpan="5">
+            <CreateFlightModal flightCreated={flightCreated} />
+          </Table.HeaderCell>
+        </Table.Footer>
       </Table>
     </div>
   );
