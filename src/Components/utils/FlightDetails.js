@@ -5,14 +5,17 @@ import { getFlightId } from "./getFlightId";
 
 const FlightDetails = ({ flight }) => {
   const [flightData, setflightData] = useState({});
+  const [id, setid] = useState(null);
+  getFlightId(flight).then((value) => setid(value));
 
-  let id = getFlightId(flight);
   useEffect(() => {
-    axiosRequest
-      .get(`/flight_details/${id}`)
-      .then((result) => setflightData(result.data))
-      .catch((error) => console.log(error));
-  }, [flight]);
+    if (id !== null) {
+      axiosRequest
+        .get(`/flight_details/${id}`)
+        .then((result) => setflightData(result.data))
+        .catch((error) => console.log(error));
+    }
+  }, [flight, id]);
 
   console.log(flightData);
 
