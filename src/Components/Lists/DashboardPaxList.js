@@ -1,7 +1,8 @@
 import React from "react";
+import PaxListDisplay from "../utils/PaxListDisplay";
 
 const DashboardPaxList = () => {
-  return <div>DashboardPaxList</div>;
+  return <PaxListDisplay />;
 };
 
 export default DashboardPaxList;
