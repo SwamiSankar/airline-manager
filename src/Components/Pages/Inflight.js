@@ -6,6 +6,7 @@ import SeatMapCard from "../Cards/SeatMapCard";
 const Inflight = () => {
   const { state } = useContext(AppContext);
   let flight = state.flight;
+  let isLoggedIn = state.isLoggedIn;
 
   const [layout, setlayout] = useState("");
 
@@ -19,6 +20,12 @@ const Inflight = () => {
     return (
       <div className="inflight-container">
         <p> Please Select Flight from Checkin </p>
+      </div>
+    );
+  if (!isLoggedIn)
+    return (
+      <div className="inflight-container">
+        <p>Please login before accessing this page</p>
       </div>
     );
   return (

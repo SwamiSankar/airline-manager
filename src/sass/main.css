@@ -195,6 +195,20 @@ footer {
   height: 900px;
 }
 
+.checkin-container p {
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: 40em;
+  border: 2px red solid;
+  height: 100px;
+  width: 40%;
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 .homepage-container {
   margin: 0 auto;
   overflow: auto;
@@ -223,6 +237,20 @@ footer {
 .dashboard-container {
   height: 600px;
   display: block;
+}
+
+.dashboard-container p {
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: 40em;
+  border: 2px red solid;
+  height: 100px;
+  width: 40%;
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .search-button {

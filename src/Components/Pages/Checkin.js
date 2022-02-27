@@ -13,6 +13,12 @@ const Checkin = () => {
   const [layoutStatus, setlayoutStatus] = useState(false);
   const [listStatus, setlistStatus] = useState(false);
 
+  const { state } = useContext(AppContext);
+
+  let isLoggedIn = state.isLoggedIn;
+
+  console.log(isLoggedIn);
+
   useEffect(() => {
     axiosRequest
       .get("/display_slots")
@@ -56,6 +62,12 @@ const Checkin = () => {
   localStorage.setItem("flight", flight);
 
   if (!data) return null;
+  if (!isLoggedIn)
+    return (
+      <div className="checkin-container">
+        <p>Please login before accessing this page</p>
+      </div>
+    );
   return (
     <div className="checkin-container">
       <AirlineSearch

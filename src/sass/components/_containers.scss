@@ -1,5 +1,18 @@
 .checkin-container {
   height: 900px;
+  p {
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 40em;
+    border: 2px red solid;
+    height: 100px;
+    width: 40%;
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
 }
 
 .homepage-container {
@@ -31,4 +44,18 @@
 .dashboard-container {
   height: 600px;
   display: block;
+
+  p {
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 40em;
+    border: 2px red solid;
+    height: 100px;
+    width: 40%;
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
 }

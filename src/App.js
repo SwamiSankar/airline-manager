@@ -19,6 +19,10 @@ const initialState = {
     oldSlot: "",
     newSlot: "",
   },
+  isLoggedIn:
+    sessionStorage.getItem("login") === null
+      ? false
+      : sessionStorage.getItem("login"),
 };
 
 const reducer = (state, action) => {
@@ -31,6 +35,10 @@ const reducer = (state, action) => {
     case "UPDATE_SLOT":
       return {
         slot: action.data,
+      };
+    case "UPDATE_LOGIN":
+      return {
+        isLoggedIn: action.data,
       };
     default:
       return initialState;
