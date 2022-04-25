@@ -26,11 +26,7 @@ const Login = () => {
       .get("/users")
       .then((response) => {
         db_object = response.data[0];
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    if (
+        if (
       db_object.email.includes(values.email) &&
       db_object.password.includes(values.password)
     ) {
@@ -39,6 +35,11 @@ const Login = () => {
     } else {
       alert("Incorrect Credentials");
     }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  
   };
 
   return (
