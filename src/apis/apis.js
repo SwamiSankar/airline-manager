@@ -1,6 +1,6 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const axiosRequest = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: 'https://airline-manager-service.herokuapp.com/',
   // cancelToken: new axios.CancelToken((c) => (value = c)),
 });
