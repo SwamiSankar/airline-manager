@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosRequest = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: "https://airline-manager.vercel.app/",
   // cancelToken: new axios.CancelToken((c) => (value = c)),
 });
